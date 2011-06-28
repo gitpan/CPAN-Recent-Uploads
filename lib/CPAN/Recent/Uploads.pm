@@ -1,6 +1,6 @@
 package CPAN::Recent::Uploads;
 BEGIN {
-  $CPAN::Recent::Uploads::VERSION = '0.02';
+  $CPAN::Recent::Uploads::VERSION = '0.04';
 }
 
 #ABSTRACT: Find the distributions recently uploaded to CPAN
@@ -33,10 +33,8 @@ sub recent {
   my $period = _period_from_epoch( $epoch );
   my $mirror = shift || $MIRROR;
   my %data;
-  my $finished;
-  OUTER: while( !$finished ) {
-    my $foo = shift @times;
-    $finished = 1 if $foo eq $period;
+  OUTER: foreach my $foo ( @times ) {
+    last if $foo eq $period;
     my $yaml = CPAN::Recent::Uploads::Retriever->retrieve( time => $foo, mirror => $mirror );
     my @yaml;
     eval { @yaml = YAML::Syck::Load( $yaml ); };
@@ -80,7 +78,7 @@ CPAN::Recent::Uploads - Find the distributions recently uploaded to CPAN
 
 =head1 VERSION
 
-version 0.02
+version 0.04
 
 =head1 SYNOPSIS
 
@@ -126,7 +124,7 @@ Chris Williams <chris@bingosnet.co.uk>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2010 by Chris Williams.
+This software is copyright (c) 2011 by Chris Williams.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

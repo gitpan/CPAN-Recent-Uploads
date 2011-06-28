@@ -4,7 +4,7 @@
       "Chris Williams <chris@bingosnet.co.uk>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.102343, CPAN::Meta::Converter version 2.102400",
+   "generated_by" : "Dist::Zilla version 4.200008, CPAN::Meta::Converter version 2.110930",
    "license" : [
       "perl_5"
    ],
@@ -16,7 +16,7 @@
    "prereqs" : {
       "configure" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "6.31"
+            "ExtUtils::MakeMaker" : "6.30"
          }
       },
       "runtime" : {
@@ -33,13 +33,13 @@
    },
    "release_status" : "stable",
    "resources" : {
-      "homepage" : "http://github.com/bingos/cpan-recent-uploads/tree",
+      "homepage" : "http://github.com/bingos/cpan-recent-uploads",
       "repository" : {
          "type" : "git",
-         "url" : "git://github.com/bingos/cpan-recent-uploads.git",
-         "web" : "http://github.com/bingos/cpan-recent-uploads/tree"
+         "url" : "http://github.com/bingos/cpan-recent-uploads",
+         "web" : "http://github.com/bingos/cpan-recent-uploads"
       }
    },
-   "version" : "0.02"
+   "version" : "0.04"
 }
 

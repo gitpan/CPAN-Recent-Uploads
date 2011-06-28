@@ -1,3 +1,28 @@
-===================================
-End of changes in the last 365 days
-===================================
+==============================
+2011-06-28 23:44:07 +0100 0.04
+==============================
+
+  commit 3d1210f60b22496d1971c2b65c2688da1cbb68b3
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Tue Jun 28 23:44:07 2011 +0100
+  
+    Bump version for CPAN release
+
+  commit 2f9692624502272e8aa77484a282b563f83d483e
+  Author: Jeroen Latour <tour@jeroen.la>
+  Date:   Tue Jun 28 23:42:25 2011 +0100
+  
+    Resolve [RT #69119] "Module can be used only once per session"
+
+    Because the current implementation of 'recent' modifies @times, it is
+    not possible to call it multiple times in one session (well, it works
+    a few times, but it will start to download increasingly bigger files
+    until @times is finally empty).
+
+    The attached patch resolves this.
+
+    Signed-off-by: Chris 'BinGOs' Williams <chris@bingosnet.co.uk> 
+
+====================================
+End of changes in the last 1825 days
+====================================
