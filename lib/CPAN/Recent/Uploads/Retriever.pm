@@ -1,6 +1,6 @@
 package CPAN::Recent::Uploads::Retriever;
 BEGIN {
-  $CPAN::Recent::Uploads::Retriever::VERSION = '0.04';
+  $CPAN::Recent::Uploads::Retriever::VERSION = '0.06';
 }
 
 #ABSTRACT: Retrieves recentfiles from a CPAN mirror
@@ -51,7 +51,7 @@ CPAN::Recent::Uploads::Retriever - Retrieves recentfiles from a CPAN mirror
 
 =head1 VERSION
 
-version 0.04
+version 0.06
 
 =head1 SYNOPSIS
 

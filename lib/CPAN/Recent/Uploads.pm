@@ -1,6 +1,6 @@
 package CPAN::Recent::Uploads;
 BEGIN {
-  $CPAN::Recent::Uploads::VERSION = '0.04';
+  $CPAN::Recent::Uploads::VERSION = '0.06';
 }
 
 #ABSTRACT: Find the distributions recently uploaded to CPAN
@@ -34,7 +34,6 @@ sub recent {
   my $mirror = shift || $MIRROR;
   my %data;
   OUTER: foreach my $foo ( @times ) {
-    last if $foo eq $period;
     my $yaml = CPAN::Recent::Uploads::Retriever->retrieve( time => $foo, mirror => $mirror );
     my @yaml;
     eval { @yaml = YAML::Syck::Load( $yaml ); };
@@ -53,6 +52,7 @@ sub recent {
         delete $data{ $foo } if exists $data{ $foo };
       }
     }
+    last if $foo eq $period;
   }
   return \%data unless wantarray;
   return sort { $data{$a} <=> $data{$b} } keys %data;
@@ -78,7 +78,7 @@ CPAN::Recent::Uploads - Find the distributions recently uploaded to CPAN
 
 =head1 VERSION
 
-version 0.04
+version 0.06
 
 =head1 SYNOPSIS
 

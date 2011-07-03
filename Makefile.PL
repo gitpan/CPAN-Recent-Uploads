@@ -27,7 +27,7 @@ my %WriteMakefileArgs = (
     'URI' => '1.56',
     'YAML::Syck' => '1.15'
   },
-  'VERSION' => '0.04',
+  'VERSION' => '0.06',
   'test' => {
     'TESTS' => 't/*.t'
   }
