@@ -1,27 +1,47 @@
-==============================
-2011-07-03 22:53:56 +0100 0.06
-==============================
+==================================================
+Changes from 2009-05-20 00:00:00 +0000 to present.
+==================================================
 
-  commit 3ee8997d72e333ad13dd6075833c8b7b55b6338a
+-----------------------------------------
+version 0.08 at 2014-05-19 12:57:28 +0000
+-----------------------------------------
+
+  Change: e9dd91a3d0bd9caca9053062ae1a3f23b058b8b5
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Sun Jul 3 22:53:56 2011 +0100
-  
+  Date : 2014-05-19 13:57:28 +0000
+
+    Ignore Perl6 modules that have been uploaded 
+
+  Change: 698fe72f04cc56417a4e0ddca84b28c61c220dd7
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2011-07-04 12:10:02 +0000
+
+    Added a 'proper' test. 
+
+-----------------------------------------
+version 0.06 at 2011-07-03 21:53:56 +0000
+-----------------------------------------
+
+  Change: 3ee8997d72e333ad13dd6075833c8b7b55b6338a
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2011-07-03 22:53:56 +0000
+
     Fix the breakage with the previous release. 
 
-==============================
-2011-06-28 23:44:07 +0100 0.04
-==============================
+-----------------------------------------
+version 0.04 at 2011-06-28 22:44:07 +0000
+-----------------------------------------
 
-  commit 3d1210f60b22496d1971c2b65c2688da1cbb68b3
+  Change: 3d1210f60b22496d1971c2b65c2688da1cbb68b3
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Tue Jun 28 23:44:07 2011 +0100
-  
-    Bump version for CPAN release
+  Date : 2011-06-28 23:44:07 +0000
 
-  commit 2f9692624502272e8aa77484a282b563f83d483e
+    Bump version for CPAN release 
+
+  Change: 2f9692624502272e8aa77484a282b563f83d483e
   Author: Jeroen Latour <tour@jeroen.la>
-  Date:   Tue Jun 28 23:42:25 2011 +0100
-  
+  Date : 2011-06-28 23:42:25 +0000
+
     Resolve [RT #69119] "Module can be used only once per session"
 
     Because the current implementation of 'recent' modifies @times, it is
@@ -33,6 +53,58 @@
 
     Signed-off-by: Chris 'BinGOs' Williams <chris@bingosnet.co.uk> 
 
-====================================
-End of changes in the last 1825 days
-====================================
+-----------------------------------------
+version 0.02 at 2010-11-13 15:19:21 +0000
+-----------------------------------------
+
+  Change: 0df9f6a97f28a026769e0bced10a70855dbb5292
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2010-11-13 15:19:21 +0000
+
+    Now with extra SYNOPSIS. 
+
+  Change: 1c4f37e1ad784becb3a566806e00da8fa1866756
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2010-11-13 14:26:23 +0000
+
+    Documentation. 
+
+  Change: 343a3a49439c159bf2e8018fe09e84493f369a4a
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2010-11-13 14:16:13 +0000
+
+    Things can only get better 
+
+  Change: 2dc5336eb82d77a04c204a24245c15367a27be3f
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2010-11-13 13:33:19 +0000
+
+    Removed extraneous variable 
+
+  Change: 179ecf0681bab1b097922c7b8b683275ec167e2a
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2010-11-13 11:07:43 +0000
+
+    Change to use our Retriever 
+
+  Change: d40c02829a00300eb8b84231aedf39f7aa4fbd37
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2010-11-13 11:02:33 +0000
+
+    Decided how to return the uploads data 
+
+  Change: 7d98b8aea69c463c840d87c4c7ebebea76bd1330
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2010-11-13 10:02:28 +0000
+
+    Make retriever only return content if the response was a success 
+
+  Change: 447b5b09e41df7bc6b9dc0572cc7aedac703814c
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2010-11-13 09:37:02 +0000
+
+    I started something, typical me. 
+
+================
+End of releases.
+================

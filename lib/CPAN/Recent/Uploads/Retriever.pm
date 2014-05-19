@@ -1,8 +1,5 @@
 package CPAN::Recent::Uploads::Retriever;
-BEGIN {
-  $CPAN::Recent::Uploads::Retriever::VERSION = '0.06';
-}
-
+$CPAN::Recent::Uploads::Retriever::VERSION = '0.08';
 #ABSTRACT: Retrieves recentfiles from a CPAN mirror
 
 use strict;
@@ -41,9 +38,11 @@ sub _fetch {
 
 q[Woof];
 
-
 __END__
+
 =pod
+
+=encoding UTF-8
 
 =head1 NAME
 
@@ -51,7 +50,7 @@ CPAN::Recent::Uploads::Retriever - Retrieves recentfiles from a CPAN mirror
 
 =head1 VERSION
 
-version 0.06
+version 0.08
 
 =head1 SYNOPSIS
 
@@ -84,10 +83,9 @@ Chris Williams <chris@bingosnet.co.uk>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2011 by Chris Williams.
+This software is copyright (c) 2014 by Chris Williams.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
